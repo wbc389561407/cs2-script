@@ -17,11 +17,11 @@ public class GlobalKeyListenerExample implements NativeKeyListener {
         String keyText = NativeKeyEvent.getKeyText(e.getKeyCode());
 
         //如果按下z键， 实现 一件跳投的功能
-        if(keyText.equals("Z")) {
+        if(keyText.equals("Z")) {  //按下z键 一键跳投 可以修改
             MyRobot.yijiantiaotou();
         }
 
-        if(keyText.equals("J")) {
+        if(keyText.equals("J")) {  //按下j键 一键W跳投 可以修改
             MyRobot.yijianwtiaotou();
         }
 
