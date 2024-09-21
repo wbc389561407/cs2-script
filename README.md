@@ -6,10 +6,10 @@
 ## 修改键位
 
 ### GlobalKeyListenerExample 类中修改，具体请参考源码。
-        if(keyText.equals("Z")) {
-            MyRobot.yijiantiaotou();
-        }
-
-        if(keyText.equals("J")) {
-            MyRobot.yijianwtiaotou();
-        }
+          //如果有映射关系,执行对应的方法
+            if(KeyEvent.VK_Z == code){
+                MyRobot.yijiantiaotou();
+            }
+            if(KeyEvent.VK_J == code){
+                MyRobot.yijianwtiaotou();
+            }
